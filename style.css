@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css2?family=Gayathri&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+#home{
+   height: 100vh;
+   width: 100vw;
+   /* background: linear-gradient(90deg,#ff0092,#ff005d); */
+   background: linear-gradient(45deg,#fb00ff,#ab00ff);
+   overflow: hidden;
+}
+
+#home nav{
+   height: 10%;
+   width: 100%;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+   align-items: center;
+   border-bottom: 1.5px solid #ffffff77;
+   position: relative;
+   z-index: 100;
+}
+
+#home nav h1{
+   color: white;
+   font-size: 2rem;
+   font-family: 'Gayathri', sans-serif;
+}
+
+#home nav h1 i{
+   color: #ffffff9d;
+}
+
+#home nav form{
+   height: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 25%;
+   margin-left: 300px;
+}
+
+#home nav form input{
+   height: 55%;
+   background: #ffffff23;
+   border: 1px solid #ffffff23;
+   outline: none;
+   padding: 10px;
+   color: white;
+   font-size: 1rem;
+   outline: none;
+}
+
+#home nav form input:focus{
+   border: 1px solid white;
+   box-shadow: 0px 0px 10px #ffffffc7;
+}
+
+#home nav form input::placeholder{
+   color: white;
+}
+
+#home nav form button{
+   height: 55%;
+   width: 15%;
+   border: 1px solid #ffffff23;
+   outline: none;
+   background: #ffffff82;
+   color: white;
+   cursor: pointer;
+   transition: 0.2s;
+}
+
+#home nav form button:hover{
+   background: #ffffff23;
+   border: 1px solid white;
+}
+
+#home nav .options i{
+   font-size: 1.4rem;
+   margin-right: 20px;
+   color: #ffffff63;
+   transition: 0.2s;
+}
+
+#home nav .options i:hover{
+   color: #ffffffd7;
+}
+
+#home .main{
+   display: flex;
+   height: 100%;
+   width: 100%;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+}
+
+#home .main .left{
+   width: 23%;
+   height: 100%;
+   background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url('bg2.jpg');
+   background-size: 100%;
+   color: white;
+   font-size: 2.8rem;
+}
+
+#home .main .center{
+   padding-bottom: 200px;
+   text-align: center;
+   width: 100%;
+}
+
+#home .main .center img{
+   height: 15rem;
+}
+
+#home .main .center h1{
+   font-size: 3rem;
+   color: #ffffffd1;
+   font-family: 'Gayathri', sans-serif;
+   margin-top: 10px;
+}
+
+#home .main .center h4{
+   color: #ffffffd1;
+   font-size: 2rem;
+   font-family: sans-serif;
+}
+
+#home .main .center p{
+   height: 50px;
+   background: white;
+   width: 50%;
+   margin-left: 27%;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   border-radius: 100px;
+   margin-top: 20px;
+}
+
+#home .main .center p input{
+   width: 92%;
+   height: 50px;
+   border-radius: 100px;
+   border: none;
+   outline: none;
+   padding: 20px;
+   font-size: 17px;
+}
+
+#home .main .center button{
+   background: transparent;
+   outline: none;
+   border: none;
+}
+
+#home .main .social{
+   margin-top: -200px;
+   text-align: right;
+   float: right;
+}
+
+#home .main .social i{
+   margin-right: 20px;
+   font-size: 20px;
+   cursor: pointer;
+   display: block;
+   width: 28px;
+   margin-top: 10px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background: white;
+   transition: 0.2s;
+}
+
+#home .main .social i:hover{
+   /* padding: 8px; */
+   font-size: 40px;
+}
+
+#home .main .social .fa-google{
+   color: #000;
+   padding: 2px;
+}
+
+#home .main .social .fa-facebook{
+   color: blue;
+   padding: 2px;
+}
+
+#home .main .social .fa-youtube{
+   color: #ff0000;
+   background: white;
+   padding: 2px;
+}
+
+#home .main .social .fa-instagram{
+   color: #ff0078;
+   background: white;
+   padding: 2px;
+}
+
+#home .main .social .fa-twitter{
+   color: #00ccff;
+   padding: 2px;
+}
+
+#home .main .social .fa-apple{
+   color: black;
+   padding: 2px;
+}
+
+#cards{
+   /* height: 500px; */
+   width: 100%;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+   margin-top: 100px;
+}
+
+#cards .card{
+   border: 1px solid #373737;
+   height: 100%;
+   width: 30%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   position: relative;
+   z-index: 1;
+   box-shadow: 0px 4px 5px rgba(0,0,0,0.3);
+   transition: 0.2s;
+}
+
+#cards .card:hover{
+   box-shadow: 0px 9px 5px rgba(0,0,0,0.3);
+   margin-top: -15px;
+}
+
+#cards .card::before{
+   content: "";
+   position: absolute;
+   height: 100%;
+   width: 50%;
+   top: 0;
+   right: 0;
+   background: rgba(0,0,0,0.04);
+}
+
+#cards img{
+   width: 100%;
+   clip-path: circle(35.7% at 50% 50%);
+   transition: 0.3s;
+   position: relative;
+   z-index: 100;
+}
+
+#cards .card:hover img{
+   clip-path: circle(70.7% at 50% 50%);
+   height: 100%;
+}
+
+#cards .card h1{
+   width: 100%;
+   text-align: center;
+   background: #ff0078;
+   margin-top: -5px;
+   padding: 20px;
+   font-family: 'Nanum Gothic', sans-serif;
+   color: white;
+   text-transform: uppercase;
+}
+
+#cards .card p{
+   font-size: 15px;
+   padding: 20px;
+   font-family: 'Nanum Gothic', sans-serif;
+   line-height: 30px;
+}
+
+#cards .card button{
+   height: 40px;
+   width: 130px;
+   position: relative;
+   z-index: 100;
+   margin-bottom: 30px;
+   background: white;
+   border: 1px solid blue;
+   color: blue;
+   transition: 0.2s;
+   cursor: pointer;
+   outline: none;
+   font-size: 17px;
+}
+
+#cards .card button:hover{
+   background: blue;
+   color: white;
+}
